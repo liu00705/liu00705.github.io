@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+    color: black;
+}
+
+.wrapper {
+    background-color: #d4e9e7;
+    width: 70%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2, h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-img {
+    width: 100%;
+}
+
+header {
+    
+    position: relative;
+    text-align: center;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(238, 236, 236);
+}
+
+.starfish-img {
+    float: left; 
+    margin: 15px 20px 20px 0; 
+    width: 160px; 
+    height: auto; 
+}
+
+ul {
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+
+nav ul li{
+    position: relative; /* Relative positioning for adding separator lines */    
+    list-style: none;
+    display: inline-block;
+    font-weight: normal;
+    width: calc(97% / 3);
+    padding: 10px 0;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li:not(:last-child)::after {
+    content: ""; /* Add pseudo-element */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%; /* Height is the same as the list item */
+    border-right: 1px solid black; /* Set the right-hand border as a divider */
+}
+
+form {
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-form .yname input {
+    width: 100%;
+}
+
+.contact-form .email input {
+    width: 100%;
+}
+
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px;
+    background-color: #d4e9e7;
+    border: 0.5px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    text-align: right;
+    margin: 15px;
+    padding: 15px;
+}
+
